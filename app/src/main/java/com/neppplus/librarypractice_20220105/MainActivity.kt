@@ -1,6 +1,7 @@
 package com.neppplus.librarypractice_20220105
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
@@ -14,6 +15,13 @@ class MainActivity : AppCompatActivity() {
         btnCall.setOnClickListener {
 
 //            010-2222-3333 에 전화 연결하기.
+//            (안드로이드) 전화 앱 화면으로 이동
+
+//            코드 구조가 틀린건아님. => 앱이 죽는 상황.
+
+            val myUri = Uri.parse("tel:010-2222-3333")
+            val myIntent = Intent( Intent.ACTION_CALL, myUri )
+            startActivity(myIntent)
 
         }
 
