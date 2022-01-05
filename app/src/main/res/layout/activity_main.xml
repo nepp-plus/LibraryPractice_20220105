@@ -18,6 +18,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/yuna_kim"
+            app:civ_border_width="2dp"
             android:scaleType="centerCrop"/>
 
         <TextView
